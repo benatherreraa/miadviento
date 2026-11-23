@@ -115,7 +115,7 @@ gr.addEventListener("click",ev=>{const cell=ev.target.closest(".cell");if(!cell)
  if(cell.classList.contains("open")){show(d,false);return}
  if(!un(d)){const a=$("#dr");a.currentTime=0;a.play().catch(()=>{});
   el.classList.remove("shake");void el.offsetWidth;el.classList.add("shake");
-  toast(Date.now()<new Date(2026,11,1)?"🔒 Se abre el 1 de diciembre":"🔒 Se abre el "+d+" de diciembre");return}
+  toast("🔒 Se abre el "+d+" de diciembre");return}
  cell.classList.add("open");if(!done.includes(d)){done.push(d);save()}
  chime();boom(cell.getBoundingClientRect(),30);setTimeout(()=>show(d,true),700)});
 function show(d,fx){const g=D.g[d]||{},im=$("#mi");$("#md").textContent="Día "+d;
