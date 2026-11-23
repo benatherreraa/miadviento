@@ -1,0 +1,5 @@
+name = "miadviento"
+compatibility_date = "2026-11-23"
+
+[assets]
+directory = "."
